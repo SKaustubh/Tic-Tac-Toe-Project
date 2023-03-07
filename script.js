@@ -1,5 +1,5 @@
 let value = confirm("lets start the game");
-let music = new Audio("bg.mp3");
+let music = new Audio("bgm.mp3");
 let audioTurn = new Audio("click.mp3");
 let gameover = new Audio("bye.mp3");
 let turn = "X";
@@ -40,7 +40,7 @@ if (value == true) {
         ).style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
         document.querySelector(".line").style.width = "20vw";
         count = 1;
-        gameover.play();
+        music.play();
       }
     });
   };
